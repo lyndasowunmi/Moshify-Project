@@ -18,78 +18,54 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="block container block-plans">
-      <div class="grid grid--1x3">
-        <div class="plan">
-          <div class="card card--secondary">
-            <header class="card__header">
-              <h3 class="plan__name">Entry</h3>
-              <span class="plan__price">$14</span>
-              <span class="plan__billing-cycle">/month</span>
-              <span class="badge badge--secondary badge--small">10% OFF</span>
-              <span class="plan__description">Easy start on the cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
-              </ul>
-              <button class="btn btn--outline btn--block" type="button">
-                Buy Now
-              </button>
+    <section class="block">
+      <header class="block__header">
+        <h2>What our Customers are Saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim,
+          molestiae!
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img
+                src="./images/testimonial.jpg"
+                alt="A happy, smiling customer."
+              />
+              <span class="icon-container icon-container--accent">
+                <svg class="icon icon--white icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
             </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                sunt nam, minima, dicta laborum a deserunt quia accusamus ipsum vero
+                modi dignissimos earum ad omnis delectus eius magnam veritatis atque.
+              </p>
+              <footer>
+                <div class="media">
+                     <div class="media__image quote__icon">
+                            <svg class="icon icon--primary quote__line">
+                           <use xlink:href="images/sprite.svg#line"></use>
+                         </svg>
+                       </span>
+                     </div>
+                     <div class="media__body">
+                       <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                       <p class="quote__company">ABC Company</p>
+                     </div>
+                   </div>
+              </footer>
+            </blockquote>
           </div>
-        </div>
-        <div class="plan plan--popular">
-          <div class="card card--primary">
-            <header class="card__header">
-              <h3 class="plan__name">Business</h3>
-              <span class="plan__price">$24</span>
-              <span class="plan__billing-cycle">/month</span>
-              <span class="badge badge--primary badge--small">20% OFF</span>
-              <span class="plan__description">Optimal Cloud Experience</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
-                <li class="list__item">2 CPU Cores</li>
-              </ul>
-              <button class="btn btn--dark btn--block" type="button">
-                Buy Now
-              </button>
-            </div>
           </div>
-        </div>
-        <div class="plan">
-          <div class="card card--secondary">
-            <header class="card__header">
-              <h3 class="plan__name">Business plus</h3>
-              <span class="plan__price">$54</span>
-              <span class="plan__billing-cycle">/month</span>
-              <span class="badge badge--secondary badge--small">10% OFF</span>
-              <span class="plan__description">Easy start on the cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Websites</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100 GB SSD Storage</li>
-                <li class="list__item">3 GB RAM</li>
-                <li class="list__item">2 CPU Cores</li>
-              </ul>
-              <button class="btn btn--outline btn--block" type="button">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
+
     <script src="js/main.js"></script>
   </body>
 </html>
