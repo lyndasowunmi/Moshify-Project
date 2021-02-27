@@ -17,6 +17,11 @@
   --border-radius: 30px;
 }
 
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -46,6 +51,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 600;
 }
 
 p {
@@ -134,7 +140,6 @@ a {
 /* Lists */
 
 .list {
-  color: var(--color-headings);
   font-size: 2rem;
   list-style: none;
 }
@@ -149,6 +154,7 @@ a {
   list-style-image: url(../images/tick.svg);
   padding-left: 1.6rem;
   margin-bottom: 1rem;
+  color: var(--color-headings);
 }
 
 @media screen and (min-width: 1024px) {
@@ -427,6 +433,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -641,12 +648,12 @@ a {
 
 .block--skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 .container {
@@ -719,10 +726,6 @@ a {
 }
 
 /* Hero */
-
-.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
 
 .hero__tagline {
   font-size: 2rem;
@@ -814,5 +817,36 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+}
+
+/* Showcase Block */
+
+.showcase__heading {
+  color: white;
+  font-size: 3.4rem;
+}
+
+.showcase__media-heading {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.showcase__media p {
+  font-size: 1.5rem;
+}
+
+.showcase__image {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .showcase__image {
+    max-width: 700px;
   }
 }
