@@ -850,3 +850,81 @@ a {
     max-width: 700px;
   }
 }
+
+/* Showcase Block */
+
+.footer {
+  background: rgb(43, 41, 41);
+}
+
+.footer a {
+  color: #777;
+}
+
+.footer a:hover {
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer__heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+  margin: 0;
+  padding-left: 0;
+  word-wrap: break-word;
+}
+
+.footer__brand {
+  margin-top: 4.5rem;
+  text-align: center;
+}
+
+.footer__brand img {
+  /* TODO: Consider refactoring this and applying it to all images */
+  width: 100%;
+  max-width: 230px;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  color: white;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .footer .collapsible__chevron {
+    display: none;
+  }
+  .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__brand {
+    margin-top: 1rem;
+    order: -1;
+  }
+
+  .footer__copyright {
+    font-size: 1.1rem;
+  }
+
+  .footer__section {
+    border-bottom: 0;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+}
