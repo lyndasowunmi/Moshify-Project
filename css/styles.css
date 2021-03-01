@@ -206,7 +206,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: none;
-  padding: 2rem 3rem;
+  padding: 2rem 3vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -304,6 +304,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -522,8 +523,21 @@ a {
   padding: 3rem;
 }
 
+.testimonial__heading {
+  margin-top: 0rem;
+}
+
 .testimonial__image {
   position: relative;
+}
+
+.quote {
+  margin: 2rem 0;
+}
+
+.quote__text {
+  font-weight: 600;
+  opacity: 0.7;
 }
 
 .testimonial__image > img {
@@ -532,7 +546,7 @@ a {
 
 .testimonial__image > .icon-container {
   position: absolute;
-  top: 3rem;
+  top: 1rem;
   right: -30px;
 }
 
@@ -542,6 +556,7 @@ a {
     font-size: 2.4rem;
   }
   .testimonial .quote {
+    padding-top: 9rem;
     margin-left: 6rem;
   }
 }
@@ -751,6 +766,10 @@ a {
 
 /* Plans Block */
 
+.block-plans {
+  padding-top: 0.5rem;
+}
+
 .block-plans .grid {
   gap: 8rem 4rem;
 }
@@ -779,10 +798,11 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
   font-size: 1.5rem;
   font-weight: 600;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   max-width: 700px;
@@ -799,7 +819,8 @@ a {
 
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem 0;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
 }
 
 .feature:first-of-type {
@@ -851,10 +872,11 @@ a {
   }
 }
 
-/* Showcase Block */
+/* Footer Block */
 
 .footer {
   background: rgb(43, 41, 41);
+  padding: 0rem 0 3rem 0;
 }
 
 .footer a {
@@ -900,6 +922,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding: 5rem 0 3rem 0;
+  }
+
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
