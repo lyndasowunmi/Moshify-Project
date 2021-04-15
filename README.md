@@ -1,11 +1,11 @@
-MOSHIFIED WEBSITE MOCK UP
+#MOSHIFIED WEBSITE MOCK UP
 
 A website that mocks all of the features, animations, and components of moshified.com
 
 Features:
-. Built using Javascript, HTML, CSS, and JavaScript
-. Mobile-responsive
-. The website includes;
+- Built using HTML, CSS, and JavaScript
+- Mobile-responsive
+- The website includes;
 
   * Navigation bar
   * Hero block
