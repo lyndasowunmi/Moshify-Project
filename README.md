@@ -1,4 +1,4 @@
-#MOSHIFIED WEBSITE MOCK UP
+# MOSHIFIED WEBSITE MOCK UP
 
 A website that mocks all of the features, animations, and components of moshified.com
 
